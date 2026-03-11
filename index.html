@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO | Mauren Villamil</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for stylish typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Ocultar imágenes extra en la tarjeta de diseño gráfico, solo mostrar la primera como portada */
+        .graphic-item img:not(:first-of-type) {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <!-- Hero Section con 2 columnas: Foto (Izq) y Textos/Botones (Der) -->
+        <header class="hero">
+
+            <!-- Columna Izquierda: Foto -->
+            <div class="hero-image">
+                <div class="photo-wrapper">
+                    <div class="creative-frame">
+                        <img src="imag/_DSC0116_20250605_091307_0000.jpg" alt="Foto de Mauren Villamil en su portafolio"
+                            width="150">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Contenido y Botones -->
+            <div class="hero-content">
+                <h1 class="name">Mauren Villamil</h1>
+                <div class="divider"></div>
+
+                <!-- Textos centrados -->
+                <div class="text-center-wrapper">
+                    <h2 class="profession">Diseñadora Gráfica</h2>
+                    <h3 class="year">Portafolio 2026</h3>
+                </div>
+            </div>
+        </header>
+
+        <!-- Botones pasaron a estar FUERA y DEBAJO del contenedor principal -->
+        <nav class="action-cards">
+            <a href="#sobre-mi" class="card-btn color-1">
+                <span>Sobre mí</span>
+            </a>
+            <a href="#trabajos" class="card-btn color-2">
+                <span>Trabajos</span>
+            </a>
+            <a href="#contacto" class="card-btn color-3">
+                <span>Contacto</span>
+            </a>
+        </nav>
+
+    </main>
+
+    <!-- Modal Sobre mí -->
+    <div id="modal-sobre-mi" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-sobre-mi')">&times;</span>
+            <h2 class="modal-title">Sobre mí</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6; text-align: left;">
+                ¡Hola! Soy Mauren Villamil, Diseñadora Gráfica apasionada por la creación visual. Me encanta trabajar en proyectos creativos que buscan comunicar ideas de manera efectiva a través de la estética, la funcionalidad y el impacto visual.
+            </p>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; text-align: left;">
+                Siempre estoy en busca de nuevos retos y oportunidades para expandir mis conocimientos en áreas de diseño, fotografía y comunicación visual.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modals para Trabajos -->
+    <!-- Modal Principal Trabajos -->
+    <div id="modal-trabajos" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-trabajos')">&times;</span>
+            <h2 class="modal-title">Mis Trabajos</h2>
+            <div class="modal-options">
+                <button class="card-btn modal-btn color-1"
+                    onclick="openModal('modal-foto'); closeModal('modal-trabajos')">
+                    <span>Proyecto Fotográfico</span>
+                </button>
+                <button class="card-btn modal-btn color-2"
+                    onclick="openModal('modal-grafica'); closeModal('modal-trabajos')">
+                    <span>Creaciones Gráficas</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Proyecto Fotográfico -->
+    <div id="modal-foto" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close-btn" onclick="closeModal('modal-foto')">&times;</span>
+            <h2 class="modal-title">Proyecto Fotográfico Bogotá 2025</h2>
+            <div class="gallery">
+                <!-- 16 imágenes de placeholder -->
+                <div class="gallery-item"><img src="imag/SAM_7578.jpg" alt="Foto 1" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7586.jpg" alt="Foto 2" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7596.jpg" alt="Foto 3" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7608.jpg" alt="Foto 4" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7628.jpg" alt="Foto 5" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7642.jpg" alt="Foto 6" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7645.jpg" alt="Foto 7" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7648.jpg" alt="Foto 8" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7657.jpg" alt="Foto 9" loading="lazy">
+                </div>
+                <div class="gallery-item"><img src="imag/SAM_7667.jpg" alt="Foto 10" loading="lazy"></div>
+                <div class="gallery-item"><img src="imag/SAM_7676.jpg" alt="Foto 11" loading="lazy"></div>
+                <div class="gallery-item"><img src="imag/SAM_7678.jpg" alt="Foto 12" loading="lazy"></div>
+                <div class="gallery-item"><img src="imag/SAM_7691.jpg" alt="Foto 13" loading="lazy"></div>
+                <div class="gallery-item"><img src="imag/SAM_7695.jpg" alt="Foto 14" loading="lazy"></div>
+                <div class="gallery-item"><img src="imag/SAM_7702.jpg" alt="Foto 15" loading="lazy"></div>
+                <div class="gallery-item"><img src="imag/SAM_7737.jpg" alt="Foto 16" loading="lazy"></div>
+            </div>
+            <button class="back-btn" onclick="closeModal('modal-foto'); openModal('modal-trabajos')">Volver</button>
+        </div>
+    </div>
+
+    <!-- Modal Visor de Imagen (Lightbox) -->
+    <div id="modal-visor" class="modal">
+        <div class="modal-content modal-large" style="background: transparent; border: none; box-shadow: none;">
+            <span class="close-btn" onclick="closeModal('modal-visor')"
+                style="color: white; font-size: 3rem; right: 10px; top: -10px;">&times;</span>
+            <img id="img-ampliada" src="" alt="Imagen Ampliada"
+                style="max-width: 100%; max-height: 80vh; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        </div>
+    </div>
+
+    <!-- Modal Creaciones Gráficas -->
+    <div id="modal-grafica" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close-btn" onclick="closeModal('modal-grafica')">&times;</span>
+            <h2 class="modal-title">Creaciones Gráficas</h2>
+            <div class="gallery">
+                <!-- Proyecto 1: 3 Imágenes -->
+                <div class="gallery-item graphic-item" style="background-color: #ffffff;">
+                    <img src="imag/Huevos 2-08.png" alt="Diseño 1 - Portada" loading="lazy"
+                        style="object-fit: contain;">
+                    <img src="imag/Huevos 2-06.png" alt="" loading="lazy">
+                    <img src="imag/Huevos 2-07.png" alt="" loading="lazy">
+                    <div class="hover-overlay">Ver 3 Imágenes</div>
+                </div>
+                <!-- Proyecto 2: 1 Imagen -->
+                <div class="gallery-item graphic-item" data-images='["imag/SAM_7608.jpg"]'>
+                    <img src="imag/poster jpg.PNG" alt="Diseño 2" loading="lazy">
+                    <div class="hover-overlay">Ver Imagen</div>
+                </div>
+                <!-- Proyecto 3: 1 Imagen -->
+                <div class="gallery-item graphic-item" data-images='["imag/SAM_7628.jpg"]'>
+                    <img src="imag/muestra de la tipografia jpg.jpeg" alt="Diseño 3" loading="lazy">
+                    <div class="hover-overlay">Ver Imagen</div>
+                </div>
+                <!-- Proyecto 4: 1 Imagen -->
+                <div class="gallery-item graphic-item" data-images='["imag/SAM_7642.jpg"]'>
+                    <img src="imag/postJPG-01.jpg" alt="Diseño 4" loading="lazy">
+                    <img src="imag/postJPG-02.jpg" alt="">
+                    <img src="imag/postJPG-03.jpg" alt="">
+                    <div class="hover-overlay">Ver Imagen</div>
+                </div>
+            </div>
+            <button class="back-btn" onclick="closeModal('modal-grafica'); openModal('modal-trabajos')">Volver</button>
+        </div>
+    </div>
+
+    <!-- Modal Contacto (WhatsApp QR) -->
+    <div id="modal-contacto" class="modal">
+        <div class="modal-content" style="max-width: 450px;">
+            <span class="close-btn" onclick="closeModal('modal-contacto')">&times;</span>
+            <h2 class="modal-title" style="margin-bottom: 1rem;">Contáctame</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">Escanea el código QR para
+                escribirme a WhatsApp</p>
+
+            <div
+                style="background: white; padding: 1.5rem; border-radius: 20px; display: inline-block; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin-bottom: 1.5rem;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://wa.me/qr/3OOW4BKKQFF4H1"
+                    alt="WhatsApp QR Code" style="display: block; width: 250px; height: 250px;">
+            </div>
+
+            <div style="margin-top: 1rem;">
+                <a href="https://wa.me/qr/3OOW4BKKQFF4H1" target="_blank" class="card-btn color-3"
+                    style="display: inline-block; padding: 1rem 2rem; font-size: 1rem; border-radius: 30px; text-decoration: none;">
+                    O abre el chat aquí
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Visor de Multi-Imágenes para Diseño Gráfico -->
+    <div id="modal-visor-grafica" class="modal">
+        <div class="modal-content modal-large"
+            style="background: rgba(255,255,255,0.1); border: none; box-shadow: none;">
+            <span class="close-btn" onclick="closeModal('modal-visor-grafica')"
+                style="color: white; font-size: 3rem; right: 10px; top: -10px;">&times;</span>
+            <!-- Contenedor dinámico donde inyectaremos las imágenes -->
+            <div id="galeria-dinamica"
+                style="display: flex; flex-direction: column; gap: 2rem; align-items: center; padding: 2rem 0; max-height: 80vh; overflow-y: auto;">
+                <!-- Las imágenes se insertan por JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevenir scroll de fondo
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+            
+            let algunModalActivo = Array.from(document.querySelectorAll('.modal')).some(modal => modal.classList.contains('active'));
+            if (!algunModalActivo) {
+                document.body.style.overflow = 'auto'; // Restaurar scroll
+            } else {
+                document.body.style.overflow = 'hidden'; // Mantener scroll oculto si hay otro modal abierto
+            }
+        }
+
+        // Interceptar el clic en el botón de Sobre mí
+        document.querySelector('a[href="#sobre-mi"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            openModal('modal-sobre-mi');
+        });
+
+        // Interceptar el clic en el botón de Trabajos
+        document.querySelector('a[href="#trabajos"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            openModal('modal-trabajos');
+        });
+
+        // Interceptar el clic en el botón de Contacto
+        document.querySelector('a[href="#contacto"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            openModal('modal-contacto');
+        });
+
+        // Configurar el visor de imágenes fotográficas (Lightbox simple)
+        document.querySelectorAll('#modal-foto .gallery-item img').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function () {
+                const visorImg = document.getElementById('img-ampliada');
+                visorImg.src = this.src;
+                openModal('modal-visor');
+            });
+        });
+
+        // Configurar el visor de Diseños Gráficos (Puede tener múltiples imágenes)
+        document.querySelectorAll('.graphic-item').forEach(item => {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', function () {
+                const galeriaDinamica = document.getElementById('galeria-dinamica');
+                // Limpiar contenido anterior  
+                galeriaDinamica.innerHTML = '';
+
+                // Obtener TODAS las imágenes dentro de este proyecto gráfico específico
+                const imagenesDelProyecto = this.querySelectorAll('img');
+
+                // Crear un tag <img> en el visor por cada imagen encontrada en este item
+                imagenesDelProyecto.forEach(imgOriginal => {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = imgOriginal.src; // Tomar el src de la etiqueta img
+                    imgElement.style.maxWidth = '100%';
+                    imgElement.style.borderRadius = '12px';
+                    imgElement.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+                    imgElement.style.backgroundColor = '#ffffff'; // Fondo blanco para PNGs transparentes
+                    imgElement.loading = 'lazy';
+                    galeriaDinamica.appendChild(imgElement);
+                });
+
+                openModal('modal-visor-grafica');
+            });
+        });
+
+        // Cerrar modal al hacer clic afuera
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+
+                let algunModalActivo = Array.from(document.querySelectorAll('.modal')).some(modal => modal.classList.contains('active'));
+                if (!algunModalActivo) {
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
